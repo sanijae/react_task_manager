@@ -1,5 +1,6 @@
 {
   "name": "mern-task-manager",
+  "homepages": "https://sanijae.github.io/react_task_manager --prefix frontend",
   "version": "1.0.0",
   "description": "A MERN application for basic tasks management",
   "main": "index.js",
@@ -10,10 +11,11 @@
     "install-all": "npm install && npm install --prefix frontend && npm install --prefix backend",
     "heroku-postbuild": "npm install --prefix frontend && npm run build --prefix frontend && npm install --prefix backend",
     "build": "npm install --prefix frontend && npm run build --prefix frontend && npm install --prefix backend",
+    "deploy": "gh-pages -d build --prefix frontend",
     "start": "cd backend && node app.js"
   },
   "keywords": [
-    "MERN", 
+    "MERN",
     "Tasks",
     "Task manager",
     "Full stack application"
@@ -21,6 +23,7 @@
   "author": "sanijae",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^7.1.0"
+    "concurrently": "^7.1.0",
+    "gh-pages": "^6.1.1"
   }
 }
